@@ -35,6 +35,12 @@ index.startup().then(() => {
                 client.geocodeForward(addressQuery, function(err, data, res) {
             
                     if(err) console.log(err);
+
+                    if(data.features.length == 0){
+
+                        increment();
+
+                    }
             
                     console.log(addressQuery);
                     console.log(data.features[0].geometry.coordinates); // [long, lat]
@@ -73,6 +79,7 @@ index.startup().then(() => {
                     }else {
 
                         console.log('Finished converting.');
+                        process.exit(0);
 
                     }
 
