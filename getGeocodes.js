@@ -45,18 +45,18 @@ index.startup().then(() => {
                     console.log(addressQuery);
                     console.log(data.features[0].geometry.coordinates); // [long, lat]
             
-                    Equipment.findById(result[i]._id, function(err, equipment){
+                    Equipment.findById(result[i]._id, function(err, result){
 
                         if(err) console.log(err);
                       
-                        equipment.set({
+                        result.set({
                             loc: { 
                                 type: "Point",
                                 coordinates: data.features[0].geometry.coordinates
                             }
                         });
 
-                        equipment.save(function(err){
+                        result.save(function(err){
 
                             if(err) console.log(err);
 
