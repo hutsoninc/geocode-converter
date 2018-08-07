@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path: '../.env'});
 var MapboxClient = require('mapbox');
 var index = require('./index.js');
 
