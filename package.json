@@ -8,13 +8,13 @@
   },
   "author": {
     "name": "Austin Gordon",
-    "email": "agordon@hutsoninc.com",
+    "email": "gordon.austin2@gmail.com",
     "url": "https://github.com/AustinLeeGordon"
   },
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^5.0.1",
+    "dotenv": "^6.2.0",
     "mapbox": "^1.0.0-beta9",
-    "mongoose": "^5.0.12"
+    "mongoose": "^5.4.10"
   }
 }
